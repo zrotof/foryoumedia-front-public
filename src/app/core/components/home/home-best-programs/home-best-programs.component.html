@@ -1,0 +1,19 @@
+<div class="top-programs">
+    <div class="content my-container">
+        <h2>Nos meilleurs programmes</h2>
+
+        <p-carousel [value]="programs" styleClass="custom-carousel" [numVisible]="4" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+
+            <ng-template let-program pTemplate="item">
+                <div class="program-container">
+                    <div class="program">
+                        <img src="{{program.image}}" [alt]="" class="product-image" />
+                        <span> {{program.name}} </span>
+                    </div>
+                </div>
+            </ng-template>
+
+        </p-carousel>
+    </div>
+
+</div>

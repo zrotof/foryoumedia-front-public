@@ -1,0 +1,131 @@
+.live{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 70px;
+
+    .content{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .title{
+            display: flex;
+            align-items: center;
+    
+            h2{
+                color: #fafafa;
+                font-size: 2em;
+            }
+            
+            .tag{
+                background-color: red;
+                border-radius: 5px;
+                padding: 5px 15px;
+                margin-left: 15px;
+    
+                .text{
+                    color: #fafafa;
+                    position: relative;
+                    padding-left: 13px;
+                }
+    
+                .text::before{
+                    content: "";
+                    position: absolute;
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background: #fafafa !important;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        .events{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 70px;
+
+            .event{
+
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                cursor: pointer;
+
+                .image{
+                    height: 12em;
+                    width: 12em;
+                    border-radius: 5px;                  
+                    overflow: hidden;
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .texts{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-left: 20px;
+                    color: #fafafa;
+
+                    .header{
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        span{
+                            font-size: 1.1em;
+                        }
+                        
+                        img{
+                            width: 30px;
+                            height: 25px;
+                            background-color: inherit;
+                            margin-left: 10px;
+                            background-image:none;
+                        }
+                    }
+
+                    .event-title{
+                        font-size: 1.8em;
+                        margin: 30px 0 5px 0;
+                    }
+
+                    .event-hour{
+                        margin-bottom: 20px;
+                    }
+
+                    .description{
+                        max-width: 300px;
+                        font-size: 0.95em;
+                    }
+
+                }
+            }
+            .event:hover{
+            
+                .image{
+                    
+                    transition: all 0.3s ease-in-out;
+                    box-shadow: rgba(42, 93, 220, 0.22) 0px 19px 38px, rgba(42, 93, 220, 0.22) 0px 15px 12px;    
+                    
+                    img{
+                        transform: scale(1.2,1.2);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

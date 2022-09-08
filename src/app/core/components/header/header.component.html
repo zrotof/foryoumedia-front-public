@@ -1,0 +1,26 @@
+<header (scroll)="onWindowScroll()" [ngClass]="isNotYetImplemented?'navbar-background':''">
+
+    <div class="content my-container">
+        <img routerLink="" src="../../../../assets/img/header/logo-foryou.jpg" alt="Logo de ForYou Média">
+
+        <nav>
+            <ul>
+                <li><a rel="canonical" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="">Accueil</a></li>
+                <li><a rel="canonical" routerLinkActive="active-link" routerLink="/live">Live TV</a></li>
+                <li><a rel="canonical" routerLinkActive="active-link" routerLink="/programmes">Programme</a></li>
+                <li><a rel="canonical" routerLinkActive="active-link" routerLink="/replay">Replay</a></li>
+                <li><a rel="canonical" routerLinkActive="active-link" routerLink="/a-propos">À propos</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger" (click)="onBurgerMenu()">
+            <input type="checkbox" />
+        
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+</header>

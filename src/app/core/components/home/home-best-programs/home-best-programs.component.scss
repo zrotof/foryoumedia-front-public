@@ -1,0 +1,111 @@
+::ng-deep .p-carousel .p-carousel-content .p-carousel-prev,
+::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+    color: #00010a;
+    user-select: none;
+    background-color: #c4c4c9;
+    z-index: 2;
+    cursor: pointer;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+::ng-deep .p-carousel .p-carousel-content .p-carousel-prev:hover,
+::ng-deep .p-carousel .p-carousel-content .p-carousel-next:hover {
+    background-color: green;
+    z-index: 2;
+    user-select: none;
+}
+
+::ng-deep .p-carousel .p-carousel-indicators{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background: #3c7b48;
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+
+::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight ::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator button  {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin: 0 2px;
+    box-shadow: none;
+    user-select: none;
+    background-color: #fafafa;
+}
+
+::ng-deep .p-carousel-indicator .p-link:hover  {
+   background-color: green;
+   user-select: none;
+   box-shadow: none;
+}
+
+
+.top-programs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 130px;
+    min-height: 50vh;
+
+    .content{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+        h2{
+            color: #fafafa;
+            font-size: 2em;
+            margin-bottom: 80px;
+        }
+
+        .program-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .program{
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 260px;
+                width: 250px;
+                cursor: pointer;
+                        
+                img{
+                    width: 100%;
+                    height: 220px;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+
+                span{
+                    margin-top: 20px;
+                    color: #fafafa;
+                }
+            }
+        }
+    }
+}
